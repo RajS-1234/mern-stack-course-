@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Document</title>
+</head>
+
+         <h1>University Registration Form</h1> 
+         <p>please fill out below to register</p>
+         <hr> 
+         
+         <form>
+               <h2 for="name">Personal Details</h2>
+               <label>Frist Name:</label>
+               <input type="=text" name="userFname" id="name" placeholder="e.g..Arjun">
+               <br><br>
+
+               <label for="surname">Last Name:</label>
+               <input type="=text" name="surname" id="surname" placeholder="e.g..kumar">
+               <br><br>
+
+               <label for="dob">Date of Brith:</label>
+               <input type="date" name="dob" placeholder="dd/mm/yyyy">
+               <br><br>
+
+               <p>Gender:</p>
+               <label for="male">Male</label>
+               <input type="radio" name="gender" id="male" value="male">
+               <br><br>
+
+               <label for="female">Female</label>
+               <input type="radio" name="gender" id="female" value="female">
+               <br><br>
+
+              <label for="other">Other</label>
+              <input type="radio" name="gender" id="other" value="other">
+              <br><br>
+
+              <label for="file">Upload Your photo:<br></label>
+              <input type="file" name="file" id="file">
+
+              <hr>
+
+              <h2>Contact information</h2>
+              <label>Email Address:</label>
+              <input type="email" name="userEmail" placeholder="you@example.com">
+              <br><br>
+
+              <label for="Address">Mailing Address:<br></label>
+              <textarea name="Address" id="Address" cols="10" rows="10"></textarea>
+
+              <hr>
+
+              <h2>Academic Information</h2>
+              
+              <label>select Your Course: <br></label>
+              <select name="Course" id="Course" >
+               <option value="Oprating System">Oprating System</option>
+               <option value="Compiler Design">Compiler Design</option>
+               <option value="Machine Learning">Machine Learning</option>
+              </select>
+              <br><br>
+              
+              <h3>Extracircular interests</h3>
+              <lable for="Sport">Sport</label>
+              <input type="checkbox" name="interest" id="Sport" value="Sport">
+
+              <label for="Song">Music & Arts</label>
+              <input type="checkbox" name="Music" id="Song" value="Music & Arts">
+
+             <label for="python">Technology Clubs</label>
+             <input type="checkbox" name="Technology" id="Tech" value="Technology Clubs">
+
+             <label for="Volunteeringt">Volunteeringt</label>
+             <input type="checkbox" name="volut" id="Volunteeringt" value="Volunteeringt">
+             <br><br>
+
+             <hr>
+
+             <h2>Create Your Account</h2>
+             <lable>Create a Password</label>
+             <input type="password" name="password">
+             <br><br>
+
+             <lable for="Sport">Create a Password</label>
+             <input type="password" name="password">
+
+             <label for="Frist">Security Question</label>
+             <select name="secQUE" id="Frist">
+                  <option value="dog">dog</option>
+                  <option value="cat">cat</option>
+                  <option value="rat">rat</option>
+             </select>
+             <br><br>
+
+             <label>Security Answer</label>
+             <input type="password" name="password">
+             <br><br>
+
+             
+             <label>I agree to other Terms and Condition</label>
+             <input type="checkbox" name="password">
+
+             <hr>
+
+             <button type="submit">Register</button>
+             <button type="reset">Clear</button>
+
+       </form> 
+</body>
+</html>

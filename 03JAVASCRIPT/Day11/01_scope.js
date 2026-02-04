@@ -30,7 +30,6 @@ console.log(c);
 
 
 // let global=30;
-
 // function greet() {
 //           let global = 40;
 //           function meet(){

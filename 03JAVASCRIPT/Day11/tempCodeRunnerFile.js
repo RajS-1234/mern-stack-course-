@@ -1,10 +1,4 @@
 
-
-function CreateCounter(){
-       let count=0
-       function increment() {
-              
-     
-     }
-     return increment();
-}
+// console.log(user.getBalance());
+// console.log(user.deposit(300));
+// console.log(user.withdraw(200));

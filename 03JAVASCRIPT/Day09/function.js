@@ -1,7 +1,5 @@
 // function
 
-
-
 // 1. way to define function
 
 // function greeting(){
@@ -89,24 +87,29 @@
 
 // ()=> {}
 
+
 // const addNumber= (num1,num2)=> {
-//                return num1+num2;
+//       return num1+num2;
 // }
 
 // console.log(addNumber);
 // console.log(addNumber(3,4));
 
 // const arr=[6,12,3,45,6,10];
-// arr.sort((a,b)=>a-b);
+// arr.sort((a,b))=>a-b);
 // console.log(arr);
 
 // const addNumber= (num1,num2)=> num1+num2;
 
+// console.log(addNumber);
+// console.log(addNumber(5,6));
+
 // const squareNumber=(num)=> num*num;
 // const squareNumber=num=> num*num;
 
-// console.log(addNumber(5,10));
 // console.log(squareNumber);
+// console.log(squareNumber(12));
+
 
 // if we have single parameter, no need of this ()
 // const squareNumber = num => num*num;
@@ -209,26 +212,26 @@
 
 
 
-function blinkitOrderPlaced() {
-  console.log("We have started packing your order");
-}
+// function blinkitOrderPlaced() {
+//   console.log("We have started packing your order");
+// }
 
-function zomatoOrderPlaced() {
-  console.log("We have started preparing your food");
-}
+// function zomatoOrderPlaced() {
+//   console.log("We have started preparing your food");
+// }
 
-function payment(amount, call_back) {
-  console.log(`${amount} payment has initialized`);
-  console.log("Payment is received");
-  call_back();
+// function payment(amount, call_back) {
+//   console.log(`${amount} payment has initialized`);
+//   console.log("Payment is received");
+//   call_back();
 
-  // GST: Government
-  // Rider ko kitna payment dena
-  // company ko kitna
-}
+//   // GST: Government
+//   // Rider ko kitna payment dena
+//   // company ko kitna
+// }
 
-payment(500, zomatoOrderPlaced);
-payment(300, blinkitOrderPlaced);
+// payment(500, zomatoOrderPlaced);
+// payment(300, blinkitOrderPlaced);
 
 
 

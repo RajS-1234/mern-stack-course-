@@ -38,7 +38,9 @@
 
  
 
-// let const
+
+
+// let,const
 // Memory allocation
 // a =  <uninitialised> (Temporal dead zone)
 // b =  <uninitialised> (Temporal dead zone)

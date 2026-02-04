@@ -1,0 +1,20 @@
+*{
+               margin: 0px;
+               padding: 0px;
+               box-sizing: border-box;
+}        
+#frist{
+               height: 300px;
+               width: 500px;
+               background-color:white;
+               position: relative;
+}
+#circle{
+               height: 100px;
+               width: 100px;
+               background-color: brown;
+               position: absolute;
+               left: 200px;
+               top: 100px;
+               border-radius: 50%;
+}

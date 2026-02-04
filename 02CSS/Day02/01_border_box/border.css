@@ -1,0 +1,66 @@
+h1{
+               background-color: chocolate;
+               height: 300px;
+               width:  200px;
+              
+               /*border-width: 10px;
+               border-style: solid;
+               border-color: blue; */
+
+              /* border:  10px solid rgb(70, 20, 220);
+               padding: 10px;
+               margin: 200px; */
+
+               
+               /*concept of padding */
+
+               border: 10px solid black;
+               /*
+               padding: 50px;
+               padding: 10px 20px 30px 40px; 
+               padding-top: 50px;
+               padding-right: 50px;
+               padding-bottom: 100px;
+               padding-left: 50px;
+
+
+               /* frist 10 px Top-Bottom Second 20px right-left */
+               padding: 10px 20px;
+               /* frist-10px Top, Second-20px right-left, third-30px bottom  */
+               padding: 10px 20px 30px;     
+              
+
+
+               /* concept of margine */
+
+              /* 
+               margin: 50px;
+               margin: 10px 20px 30px 40px;
+               margin-top: 100px;
+               margin-bottom: 50px;
+               margin-left: 100px;
+               margin-right: 200px;
+             */
+
+
+               /*Concept of border*/
+
+               /*             
+               border-top: 10px  solid black;
+               border-right: 10px solid blue;
+               border-bottom: 10px solid aquamarine;
+               border-left: 10px solid pink;
+               */
+
+               border-radius: 50px;
+}
+h2{
+               background-color: blue;
+               border: 2px solid black;
+}
+p{
+               background-color: aquamarine;
+               padding: 20px;
+               border: 2px solid black;
+               margin : 50px;
+}

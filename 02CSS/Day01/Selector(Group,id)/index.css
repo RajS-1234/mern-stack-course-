@@ -1,0 +1,121 @@
+/* Tag Based Selector*/
+/*
+h1{
+               background-color: turquoise;
+}
+h2 {
+               background-color: blueviolet;
+}
+ul{
+               background-color:cornsilk;
+}
+h3 {
+               background-color: blue;
+}
+*/
+
+/*------------------------------------------------------------------------------*/
+
+/*Class Based Selector*/
+/*
+.frist{
+               background-color: aquamarine;
+}
+.second{
+               background-color: bisque;
+
+}
+*/
+
+/*id Based selector*/
+/*
+#rajneesh{
+               background-color: burlywood;
+}
+#radha {
+               background-color: rgb(34, 255, 0);
+}*/
+
+
+/*---------------------------------------------------------------------------------*/
+
+/* group based selection */
+/*
+h1,.frist, #rajneesh{
+               background-color: blue ;
+}
+
+.second,h3,#radha{
+               background-color: violet;
+}
+*/
+
+/*---------------------------------------------------------------------------------*/
+/*rgb(red,green,blue) or rgba(alpha) */
+h1{
+    background-color: rgba(126, 158, 123);
+}
+
+/*-------------------------------------------------------------*/
+h2{
+    background-color: hsl(110, 50%, 60.8%);
+} 
+/*--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------*/
+h1{
+    background-color: #639747;
+}
+    
+/*----------------------------------------------------------*/ 
+/*font size*/
+
+h1{
+    font-size: 50px;
+}
+ul{
+    font-size: 20px;
+}
+/*em apna position apne parent ke context me change karta hai*/
+
+h2{
+    font-size: 2em; /*The h1 will be 2 * 50px = 100px */
+} 
+
+/*
+  rem hamesha root element(html body) ke context me change hota hai
+  jisse website ko ek stability milta hai 
+*/
+
+html{
+    font-size: 40px;  /* Set the base font size for the whole document */
+}
+
+body {
+  font-size: 1rem; /* The body text will be 40px */
+}
+  h2{
+    font-size: 2rem;  /* The h1 will be 2 * 40px = 80px */
+} 
+
+
+#rajneeshji{
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+         font-weight: 900; /* Range 100-900 */
+         font-style: italic;  
+
+
+         /*font-family: "Cause", cursive;
+         font-optical-sizing: auto;
+         font-weight: 900;
+         font-style:normal; */
+}
+
+h4{
+    font-size: 1vh;
+}
+h5{
+    font-size: 3vw;
+}

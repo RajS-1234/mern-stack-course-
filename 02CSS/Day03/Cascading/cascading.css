@@ -1,0 +1,42 @@
+ /*0.positioning
+   1. inline(Priority high) 
+   2. id (Priority) 
+   3. class(priority)
+   4. tag(h1,h2)
+   5. Ordering important(Tie)
+*/
+
+h1{
+            background-color: chartreuse;   
+}
+ul{
+            background-color: brown;    
+}
+/*h2{
+           background-color: aquamarine;    
+}
+li{
+               background-color: blue;
+}
+*/
+/* id */
+#rajneesh{
+               background-color: rgb(255, 0, 238);
+}
+#frist{
+               background-color: blueviolet;
+               background-color: blue;
+}
+#second{
+               background-color: tomato;
+               background-color: cyan;
+}
+
+/* Class */
+.sono{
+               background-color: chocolate;
+               background-color: blueviolet;
+}
+h1{
+               background-color: aqua !important;
+}

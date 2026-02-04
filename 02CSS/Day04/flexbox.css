@@ -1,0 +1,84 @@
+/* div tag agar height&width mention na kare to wo width full leta hai
+   and height jitna content rahta hai utna leta hai */
+.container{
+               background-color: antiquewhite;
+               height: 600px;
+               display: flex;  /* flex - Block Element ko inline Element me convert karta hai */
+               flex-direction: row;
+               /* flex-direction: column; */
+               /* flex-direction: row-reverse; */
+              
+               /* flex-direction: column-reverse; */
+              
+               
+
+               /*
+               
+               justify-content: center;
+               justify-content: end;
+               justify-content: start;
+               justify-content: space-around;
+               justify-content: space-between;
+               justify-content: space-evenly;
+            
+               /*
+
+               align-items: center;
+               align-items: end;
+               align-items: start;
+               
+               */
+
+
+               /*how to asign element in middle*/
+              /* 
+              justify-content: center;
+              align-items: center;
+              */
+               
+               
+               /*
+
+               flex-wrap: wrap; /* iska matlab jab koi screen small kare to content compressed nahi hoga balki down side me shift hoga ye */
+               flex-wrap: nowrap;
+               flex-wrap: wrap-reverse;
+               gap: 10px;
+
+}
+/*
+    justify content hamesha main axis ke around kam karta hai
+    main axis decide kun karega,aapke flex direction--it means 
+    flex ka direction main axis and uske opposite cross-axis
+*/
+ /*
+    align items works around cross-axis
+ */
+/*div ye block level Element hai*/
+.box{
+               height: 100px;
+               width: 100px;
+               margin: 5px;
+}
+.frist{
+               background-color: orange;
+              /* flex-grow: 1;*/ /*Jitna Space bacha hua hai usko kis tarah se consume kar sakte hai*/
+              /* flex-basis: 200px;*/ /*jo hame container ka width mention kiya hai usko ye override kar deta hai--it means main axis ke around uska length kitna increase hoga*/
+}
+/*
+ flex basis main-axis ke aourd centent le length ko change karta hai
+ flex-die-->row-->incre width && column --> height
+*/
+.second{
+               background-color:green;
+               /*flex-grow: 2;*/
+               /*flex-shrink: 4;*/ /*by Defoult sbka flex-shrink one-one hota hai---fouth guna jalti shrink hoga*/
+}
+.third{
+               background-color: red;
+               /*flex-grow: 3;
+               align-self: flex-start;*/
+}
+.fourth{
+               background-color:aquamarine;
+               /*flex-grow: 4;*/
+}

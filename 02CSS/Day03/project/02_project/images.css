@@ -1,0 +1,22 @@
+#container{
+               background-color: red;
+               height: 400px;
+               width: 500px;
+               position: fixed;
+}
+.frist{
+               background-color: blue;
+               height: 400px;
+               width: 50px;
+               position: absolute;
+               left: 150px;
+               
+}
+.second{
+               background-color: blue;
+               height: 50px;
+               width: 500px;
+               position: absolute; 
+               top: 175px;           
+}
+

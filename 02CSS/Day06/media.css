@@ -1,0 +1,70 @@
+#container{
+               background-color: aqua;
+               width: 400px;
+               height: 400px;
+}
+
+/*Concept two*/
+/*
+@media screen and (max-width:600px) {
+               #container{
+                      background-color: pink;
+                      font-size: 30px;
+               }
+}
+@media screen and (max-width:900px) {
+               #container{
+                      background-color: green;
+                      font-size: 40px;        
+               }
+}
+*/
+
+
+/*Concept one*/
+/*
+@media screen and (max-width:900px) {
+               #container{
+                      background-color: green;
+                      font-size: 40px;        
+               }
+}
+@media screen and (max-width:600px) {
+               #container{
+                      background-color: pink;
+                      font-size: 30px;
+               }
+}
+*/
+
+
+
+/* 
+   upar jo condition lika hai uske upar override karta hai koon jo media screen ke andar hai wo
+*/
+
+
+/*
+@media screen and (min-width:800px) {
+               #container{
+                      background-color: orange;
+                      font-size: 60px;
+                     
+
+               }
+}
+*/
+
+
+@media screen and (min-width:600px) {
+       #container{
+              background-color: orange;
+              font-size: 60px;
+       }
+}
+@media screen and (min-width:900px) {
+       #container{
+              background-color: green;
+              font-size: 80px;
+       }
+}

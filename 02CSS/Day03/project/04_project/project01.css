@@ -1,0 +1,42 @@
+#container{
+               background-color: white;
+               height: 200px;
+               width: 400px;
+               position: relative;
+}
+#yello{
+               background-color: yellow;
+               height: 100px;
+               width: 200px;
+               position: absolute;
+               left: 100px;
+               top: 50px;
+}
+.frist{
+               background-color: blue;
+               height: 40px;
+               width: 50px;
+}
+.second{
+               background-color: blue;
+               height: 40px;
+               width: 50px;
+               position: absolute;
+               bottom: 0px;
+}
+.third{
+               background-color: blue;
+               height: 40px;
+               width: 120px;
+               position: absolute;
+               left: 80px;
+               top: 0px;
+}
+.four{
+               background-color: blue;
+               height: 40px;
+               width: 120px;
+               position: absolute;
+               left: 80px;
+               bottom: 0;
+}

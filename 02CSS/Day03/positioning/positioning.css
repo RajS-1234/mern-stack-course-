@@ -1,0 +1,106 @@
+
+/*
+  1.static
+  2.relative
+  3.fixed
+  4.sticky
+  5.absolut
+
+*/
+*{
+               margin: 0px;
+               padding: 0px;
+}
+/*-----------------------------------------------------------------*/
+/*element ka layout always normal flow me rahta hai  wo apna origanl position me rahega*/
+/*1.static*/
+
+h2{
+               background-color: brown;
+               position: static;
+               
+}
+/*----------------------------------------------------------------*/
+/* 2.relative */
+/*
+   1.koi v tag ko relative position karne par jab Content apna position Change karta hai to
+     content ke original position par kisi ko nahi aane dhenga 
+
+   2.Relative apna postion original position se change karta hai
+*/
+h2{
+               background-color: brown;
+               position:relative;
+               left: 100px;
+               top: 300px; 
+               /*top,bottom,left,right*/
+}
+
+/*-------------------------------------------------------------------------*/
+/* 3.fixed */
+/*
+     1. fixed apna position window(veiwport) ke relative me change karta hai
+
+     2. koi v tag ko position fixed karte hi wo apna normal flow (Douctmenry) original 
+        position Leave karta hai uske place par another content aa jata hai 
+*/
+
+h3{
+               background-color: chocolate;
+               position: fixed;
+               top: 0px;  
+               left: 50px; 
+               /*z-index: 10px;*/           
+}
+
+
+/*----------------------------------------------------------------------------*/
+
+/*4.sticky*/
+/* sticky is mix of relative + fixed */
+/*
+  1.शुरुआत में element अपनी जगह पर रहता है
+  2.Scroll करते-करते जैसे ही वो top: 20px को touch करता है
+  3.फिर वो उसी जगह पर fixed हो जाता है
+
+  📌 लेकिन ध्यान रखो:
+   .ये पूरी window के लिए नहीं
+   .बल्कि अपने parent container के अंदर ही stick करता है
+*/
+
+h4{
+               background-color:rgb(170, 255, 80);
+               position: sticky;
+               top: 20px; 
+} 
+/*----------------------------------------------------------------------------*/
+
+/*Difference b/w fixed and sticky 
+1.fixed -->ye start se hi apna position fixed karta hai 
+2.sticky-->इस तरह sticky पोज़िशन हमें एक तरह का बीच का रास्ता देता है, जहाँ element स्क्रॉल करते
+  समय अपनी जगह बदलता है और फिर स्थिर हो जाता है।
+*/
+
+
+
+/*5.absolute*/
+/*
+    1. koi v content ko absolute karenge to wo apna position leave karta hai 
+       and uske place par another Element aata hai && absolute Element ham kahi
+       v move kar sakte hai 
+  
+    2. jo uska ances(parent,grand parent,gran-grand parent) ,igar unke kisi v
+       position relative,sticky,fixed mark kiya hoga wo unke relative me khud 
+       ko position karenga
+    3. koi position nahi hoga to wo browser ke window ke corresponding position 
+          change karega  
+*/
+p{
+               background-color: aqua;
+               position: absolute;
+               top: 0px;
+               margin:  0px;
+               right: 50px;
+               z-index: 5; 
+}
+/*positioning karne ke bad Ham Left,Right,Top,Bottom ke values change kar sakte hai*/

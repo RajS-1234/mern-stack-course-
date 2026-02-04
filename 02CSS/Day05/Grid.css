@@ -1,0 +1,37 @@
+*{
+               padding: 0px;
+               margin: 0px;
+
+}
+.container{
+               display: grid;  
+               /* 
+
+               grid-template-rows: 200px 200px;
+               grid-template-columns: 200px 200px;
+
+               */
+               
+                
+               grid-template-columns: 1fr 1fr;
+               grid-template-rows: 1fr 1fr;
+
+               
+               background-color: antiquewhite;
+               gap: 10px;
+               padding: 10px; 
+               height: 400px;
+               width: 400px;       
+}
+.frist{
+               background-color: blue;
+}
+.second{
+               background-color: blueviolet;
+}
+.third{
+               background-color: brown;
+}
+.fourth{
+               background-color: chartreuse;
+}

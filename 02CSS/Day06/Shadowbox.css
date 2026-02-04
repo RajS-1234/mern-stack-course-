@@ -1,0 +1,17 @@
+*{
+               margin: 0px;
+               padding: 0px;  
+}
+body{
+               background-color: black;
+               height: 100vh;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+}
+#container{
+               height: 100px;
+               width: 100px;
+               background-color: yellow;
+               box-shadow: 10px 10px 10px 10px blue;
+}

@@ -1,0 +1,130 @@
+/*
+
+Common Block Elements list:
+
+
+<div> <p> <h1> to <h6> <header> <footer> <section> <article> <nav> <main> <aside>
+<form> <table> <ul> <ol> <li> <hr> <pre> <blockquote> <address> <figure> <figcaption>
+
+📌 Example:
+<div>, <p>, <h1> हमेशा next line से शुरू होंगे।
+✅ Inline (Span-level) Elements
+👉 ये content जितनी ही width लेते हैं
+👉 same line में रहते हैं
+
+
+
+Common Inline Elements list:
+
+
+<span> <a> <img> <strong> <b> <em> <i> <u> <small> <mark> <label> <input>
+<textarea> <button> <select> <option> <br> <sup> <sub> <code>
+
+📌 Example:
+<span>, <a>, <strong> line नहीं तोड़ते।
+
+*/
+
+
+
+/* Difference between Block vs spane */
+/* 1. Block Level Element Hamesha new line se start hota hai */
+
+span{
+               background-color: rgb(43, 226, 80);
+}
+
+/*
+*{
+               margin: 0px;
+               padding: 0px;
+}*/
+
+
+/* Different between Block and span */
+
+/* 2. Block Level Element Hamesha new line se start hota hai */
+/*
+span{
+               background-color: blue;
+}
+h1{
+               background-color: brown;
+}
+h2{
+               background-color: antiquewhite;
+}
+*/
+
+
+/*3.span tag element par ham height and width operation can't apply */
+/*
+span{
+         height: 100px;
+         width: 200px;      
+}
+h1{
+        background-color: chocolate;
+        height: 100px;
+        width: 200px;
+}*/
+
+/* 4.inline element bolta hai agar appko padding apply karna hai to mai sirf horizontal karne dunga 
+     vertical mai nahi hone dunga similar to margin
+ */
+ 
+span{
+               background-color: rgb(255, 205, 205);
+               /* inline Elenemt par height and width ka effect nahi padhta hai */
+               height: 1000px; 
+               width: 2000px;
+
+               /*margin-top: 50px;
+               margin-bottom: 50px; */
+
+              
+               margin-right: 10px; 
+               margin-left: 200px;
+
+
+               /*padding top and bottom real me to nahi hota hai but ham jab color kar denge to visuali dikhae deta hai*/
+               padding-top: 20px;
+               padding-bottom: 20px;
+
+               padding-left: 30px;
+               padding-right: 30px; 
+
+               /*display: block; */
+}
+h1{
+        background-color: rgb(30, 210, 141);
+        height: 300px;
+        width: 300px;
+        padding: 50px;;
+        margin: 40px;
+        border: 10px solid black;
+        box-sizing: content-box;
+        /*
+        display: inline; 
+        display: inline-block;
+       */ 
+}
+
+
+h2{
+
+        background-color: brown;
+        height:  300px;
+        width: 300px;
+        border: 12px solid black;
+        padding: 20px;
+        box-sizing: border-box;  /*
+                                    jab ye properties apply karte hai to height and width only content ki nahi rahta hai 
+                                    usme content,padding and border bhi include hoga and isme padding and border ka man batana jaruri hai
+                                */
+        margin: 40px;
+        
+        /*display: inline; */
+        /*display: inline-block;*/
+
+}

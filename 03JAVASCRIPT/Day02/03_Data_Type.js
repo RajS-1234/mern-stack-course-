@@ -41,7 +41,7 @@
 // console.log(x);
 // console.log(user);
 
-// // const p;
+// const p;
 
 // var y;
 // console.log(typeof y);
@@ -86,38 +86,40 @@
 
 // array, object, function
 
+
 // object
 
 // Rohit 12312 18 gen
 
 // user object type ke data contain kar raha hai
-// object unorder and orderlist
+// object unorderlist and orderlist
+
 // let user = {
 //     name:"Rohit",
 //     account:12312,
 //     age:18,
 //     category:'gen'
 
-//         0:"Rohit",
-//         1:12312,
-//         2:18,
-//         3:'gen'
+// //         0:"Rohit",
+// //         1:12312,
+// //         2:18,
+// //         3:'gen'
 
-//}
+// }
 // console.log(typeof user);
 // console.log(user)
 // console.log(user['name'],x.age);
 // console.log(Object.prototype.toString.call(user));
 
 
-// arr
+// array
 
 // array is a specail case of object
 // array order list 
 
 // let arr = [10,20,11,"Rohit",true];
 // console.log(Object.prototype.toString.call(arr));
-// console.log(typeof arr);
+// console.log(typeof arr);  // object
 // console.log(typeof user);
 
 // console.log(Array.isArray(arr));
@@ -145,17 +147,20 @@
 // // Arr,OB,FUN-INTERNALLY OBJECT
 // // why type of function is function not a object
 
-// function f1()
-// {
-//         console.log("MysirG");
-// }
+function f1()
+{
+        console.log("MysirG");
+}
+
+// This function can have properties:
+
 // f1.x=10
 // console.log(f1.x);
 // console.log(f1 instanceof Object);
 // console.log(f1 instanceof Function); // inheitance ho raha hai object ek type hai jiska ek subtype hai function
 // console.log(f1 instanceof Array);
 // console.log(f1);
-// console.log(typeof f1);
+// console.log(typeof f1); 
 // console.log(Object.prototype.toString.call(f1));
 
 
@@ -180,6 +185,10 @@
 // object ke pass property hota hai it means member variable 
 
 
+
+
+
+
 // Concept of NULL 
 
 // ham vaiable me value change karne ke sath sath data ke types bhi change karte hai
@@ -193,7 +202,104 @@
 
 // koi data object type ka hai 
 
+/*
 
+In the very early JavaScript implementation, values were stored in memory like this:
+
+[ type tag | actual value ]
+
+✅ Objects Were Stored as Pointers
+
+Objects are stored in memory using references (addresses).
+
+Example:
+
+let obj = {name: "Raj"};
+
+
+Internally:
+
+tag = 0 (means object)
+
+value = memory address of object
+
+Like:
+
+[0 | 0x12345]
+
+
+✅ What About null?
+
+null means:
+
+no object reference
+
+So JavaScript stored it as:
+
+[0 | 0x00000]
+
+
+Means:
+
+tag = 0 (object type)
+
+value = 0 (null pointer)
+
+So null was treated like:
+
+object pointer that points to nothing
+
+
+✅ That’s the Real Bug
+
+So when you do:
+
+typeof null
+
+
+JavaScript checks the tag:
+
+tag = 0
+
+therefore it says "object"
+
+Even though the pointer is empty.
+
+✅ Why Tag 0?
+
+Because in low-level languages like C:
+
+object references are pointers
+
+NULL pointer is represented as 0
+
+So JavaScript designers copied this approach.
+
+✅ Simple Analogy
+
+Think like this:
+
+Value	Tag	Address
+real object	0	0xABC
+null	0	0x000
+
+Both have object tag, but null has no address.
+
+✅ Modern Explanation
+
+Even today:
+
+null is a primitive
+
+but typeof null is wrong because of this old memory-tag mistake
+
+✅ Interview Line
+
+You can say:
+
+typeof null returns "object" due to a legacy bug from the first JavaScript implementation, where null was represented as a null pointer with the same type tag as objects.
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 

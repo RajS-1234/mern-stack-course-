@@ -176,45 +176,34 @@ browser have some feature and provide syntax , we can change html file into obje
 
 // css selector
 
+// tagName
 
 // const x=document.querySelector("h2");
-// x
-// <h2 id=​"second" class=​"third">​it is comming on Diwali ​</h2>​
-// const x=document.querySelector(".third");
-// undefined
-// x
-// <h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
-// const x=document.querySelector("#frist");
-// undefined
-// x
-// <h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
-
-
-// const x=document.querySelector("h2");
-// undefined
 // x
 // <h2 id=​"second" class=​"third">​it is comming on Diwali ​</h2>​
 // x.textContent=" i am fullStackdeveloper";
-// ' i am fullStackdeveloper'
+// // ' i am fullStackdeveloper'
 // console.log(x.tagName);
-// VM946:1 H2
-// undefined
-// const x=docu
-// VM1000:1 Uncaught ReferenceError: docu is not defined
-//     at <anonymous>:1:9
-// (anonymous) @ VM1000:1
+
+// className
+
+// const x=document.querySelector(".third");
+// x
+// <h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>
+
+
+// id
+
 // const x=document.querySelector("#frist");
-// undefined
 // x
 // <h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
-// document.querySelector(".third");
-// <h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
-// const list=document.querySelector("third");
-// undefined
-// list
-// null
+
+
+
+
+
 // const list=document.querySelectorAll(".third");
-// undefined
+
 // list
 // NodeList(3) [h1#frist.third, h2#second.third, ul.third]
 // list[0];
@@ -224,3 +213,8 @@ browser have some feature and provide syntax , we can change html file into obje
 // <h2 id=​"second" class=​"third">​it is comming on Diwali ​</h2>​
 // list[2];
 // <ul class=​"third">​…​</ul>​
+
+// Diff b/w HTMLCollection and NodeList
+
+// HTMLCollection is a live collection, which means that it automatically updates itself when the underlying document changes. For example, if you add a new element to the document that matches the criteria of the collection, it will be included in the collection immediately.
+// NodeList, on the other hand, is a static collection, which means that it does not update itself when the document changes. If you add a new element to the document that matches the criteria of the NodeList, it will not be included in the NodeList unless you explicitly re-query the document.

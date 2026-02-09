@@ -1,4 +1,3 @@
-
 // ham log ke pass kuc command hota hai jisko run karte hi us element ko object bana ke deta hai  
 
 /*
@@ -6,38 +5,222 @@ who convert html element into object
 browser have some feature and provide syntax , we can change html file into object with help of syntax
 */
 
-/*
-// frist select Elemet based on the id which want to manipulate
+
+
+// frist hava to select Elemet which want to manipulate
 
 // getElementById(object) -> it is an return an single DOM object
 
-const temp=window.document.getElementById("frist");
-typeof temp
-'object'
+// const temp=window.document.getElementById("frist");
+// typeof temp
+// // 'object'
 
-temp.textContent="i am rajneesh";
-'i am rajneesh'
-temp.style.backgroundColor="yellow";
-'yellow'
+// // console.dir(temp);  
+
+// temp.textContent="i am rajneesh";
+// // 'i am rajneesh'
+// temp.style.backgroundColor="yellow";
+// 'yellow'
+
 
 
 // window  
-window is the global object in the browser
 
-window
-Window {window: Window, self: Window, document: document, name: '', location: Location, …}
-temp
-<h1 style=​"background-color:​ yellow;​ color:​ brown;​" id=​"frist">​i am rajneesh​</h1>​
-console.dir(temp);
-VM1273:1 h1#fristaccessKey: ""align: ""ariaActiveDescendantElement: nullariaAtomic: nullariaAutoComplete: nullariaBrailleLabel: nullariaBrailleRoleDescription: nullariaBusy: nullariaChecked: nullariaColCount: nullariaColIndex: nullariaColIndexText: nullariaColSpan: nullariaControlsElements: nullariaCurrent: nullariaDescribedByElements: nullariaDescription: nullariaDetailsElements: nullariaDisabled: nullariaErrorMessageElements: nullariaExpanded: nullariaFlowToElements: nullariaHasPopup: nullariaHidden: nullariaInvalid: nullariaKeyShortcuts: nullariaLabel: nullariaLabelledByElements: nullariaLevel: nullariaLive: nullariaModal: nullariaMultiLine: nullariaMultiSelectable: nullariaOrientation: nullariaPlaceholder: nullariaPosInSet: nullariaPressed: nullariaReadOnly: nullariaRelevant: nullariaRequired: nullariaRoleDescription: nullariaRowCount: nullariaRowIndex: nullariaRowIndexText: nullariaRowSpan: nullariaSelected: nullariaSetSize: nullariaSort: nullariaValueMax: nullariaValueMin: nullariaValueNow: nullariaValueText: nullassignedSlot: nullattributeStyleMap: StylePropertyMap {size: 2}attributes: NamedNodeMap {0: style, 1: id, style: style, id: id, length: 2}autocapitalize: ""autofocus: falsebaseURI: "http://127.0.0.1:5502/03JAVASCRIPT/Day13/01_index.html"childElementCount: 0childNodes: NodeList [text]children: HTMLCollection []classList: DOMTokenList [value: '']className: ""clientHeight: 38clientLeft: 0clientTop: 0clientWidth: 538contentEditable: "inherit"currentCSSZoom: 1dataset: DOMStringMap {}dir: ""draggable: falseeditContext: nullelementTiming: ""enterKeyHint: ""firstChild: textfirstElementChild: nullhidden: falseid: "frist"inert: falseinnerHTML: "i am rajneesh"innerText: "i am rajneesh"inputMode: ""isConnected: trueisContentEditable: falselang: ""lastChild: textlastElementChild: nulllocalName: "h1"namespaceURI: "http://www.w3.org/1999/xhtml"nextElementSibling: h2#secondnextSibling: textnodeName: "H1"nodeType: 1nodeValue: nullnonce: ""offsetHeight: 38offsetLeft: 8offsetParent: bodyoffsetTop: 21offsetWidth: 538onabort: nullonanimationend: nullonanimationiteration: nullonanimationstart: nullonauxclick: nullonbeforecopy: nullonbeforecut: nullonbeforeinput: nullonbeforematch: nullonbeforepaste: nullonbeforetoggle: nullonbeforexrselect: nullonblur: nulloncancel: nulloncanplay: nulloncanplaythrough: nullonchange: nullonclick: nullonclose: nulloncommand: nulloncontentvisibilityautostatechange: nulloncontextlost: nulloncontextmenu: nulloncontextrestored: nulloncopy: nulloncuechange: nulloncut: nullondblclick: nullondrag: nullondragend: nullondragenter: nullondragleave: nullondragover: nullondragstart: nullondrop: nullondurationchange: nullonemptied: nullonended: nullonerror: nullonfocus: nullonformdata: nullonfullscreenchange: nullonfullscreenerror: nullongotpointercapture: nulloninput: nulloninvalid: nullonkeydown: nullonkeypress: nullonkeyup: nullonload: nullonloadeddata: nullonloadedmetadata: nullonloadstart: nullonlostpointercapture: nullonmousedown: nullonmouseenter: nullonmouseleave: nullonmousemove: nullonmouseout: nullonmouseover: nullonmouseup: nullonmousewheel: nullonpaste: nullonpause: nullonplay: nullonplaying: nullonpointercancel: nullonpointerdown: nullonpointerenter: nullonpointerleave: nullonpointermove: nullonpointerout: nullonpointerover: nullonpointerrawupdate: nullonpointerup: nullonprogress: nullonratechange: nullonreset: nullonresize: nullonscroll: nullonscrollend: nullonscrollsnapchange: nullonscrollsnapchanging: nullonsearch: nullonsecuritypolicyviolation: nullonseeked: nullonseeking: nullonselect: nullonselectionchange: nullonselectstart: nullonslotchange: nullonstalled: nullonsubmit: nullonsuspend: nullontimeupdate: nullontoggle: nullontouchcancel: nullontouchend: nullontouchmove: nullontouchstart: nullontransitioncancel: nullontransitionend: nullontransitionrun: nullontransitionstart: nullonvolumechange: nullonwaiting: nullonwebkitanimationend: nullonwebkitanimationiteration: nullonwebkitanimationstart: nullonwebkitfullscreenchange: nullonwebkitfullscreenerror: nullonwebkittransitionend: nullonwheel: nullouterHTML: "<h1 style=\"background-color: yellow; color: brown;\" id=\"frist\">i am rajneesh</h1>"outerText: "i am rajneesh"ownerDocument: documentparentElement: bodyparentNode: bodypart: DOMTokenList [value: '']popover: nullprefix: nullpreviousElementSibling: nullpreviousSibling: textrole: nullscrollHeight: 38scrollLeft: 0scrollTop: 0scrollWidth: 538shadowRoot: nullslot: ""spellcheck: truestyle: CSSStyleDeclaration {0: 'background-color', 1: 'color', accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}tabIndex: -1tagName: "H1"textContent: "i am rajneesh"title: ""translate: truevirtualKeyboardPolicy: ""writingSuggestions: "true"[[Prototype]]: HTMLHeadingElement
-undefined
-window
-Window {window: Window, self: Window, document: document, name: '', location: Location, …}
-window.alert();
-undefined
-window.open();
-Window {window: Window, self: Window, document: document, name: '', location: Location, …}
-Object.keys(window);
-(242) ['window', 'self', 'document', 'name', 'location', 'customElements', 'history', 'navigation', 'locationbar', 'menubar', 'personalbar', 'scrollbars', 'statusbar', 'toolbar', 'status', 'closed', 'frames', 'length', 'top', 'opener', 'parent', 'frameElement', 'navigator', 'origin', 'external', 'screen', 'innerWidth', 'innerHeight', 'scrollX', 'pageXOffset', 'scrollY', 'pageYOffset', 'visualViewport', 'screenX', 'screenY', 'outerWidth', 'outerHeight', 'devicePixelRatio', 'event', 'clientInformation', 'screenLeft', 'screenTop', 'styleMedia', 'onsearch', 'onappinstalled', 'onbeforeinstallprompt', 'onabort', 'onbeforeinput', 'onbeforematch', 'onbeforetoggle', 'onblur', 'oncancel', 'oncanplay', 'oncanplaythrough', 'onchange', 'onclick', 'onclose', 'oncommand', 'oncontentvisibilityautostatechange', 'oncontextlost', 'oncontextmenu', 'oncontextrestored', 'oncuechange', 'ondblclick', 'ondrag', 'ondragend', 'ondragenter', 'ondragleave', 'ondragover', 'ondragstart', 'ondrop', 'ondurationchange', 'onemptied', 'onended', 'onerror', 'onfocus', 'onformdata', 'oninput', 'oninvalid', 'onkeydown', 'onkeypress', 'onkeyup', 'onload', 'onloadeddata', 'onloadedmetadata', 'onloadstart', 'onmousedown', 'onmouseenter', 'onmouseleave', 'onmousemove', 'onmouseout', 'onmouseover', 'onmouseup', 'onmousewheel', 'onpause', 'onplay', 'onplaying', 'onprogress', 'onratechange', 'onreset', …]
-browser have some feature and provide syntax , we can change html file into object with help of syntax
-*/
+
+// window is the global object in the browser
+
+// The window object is the top-level object that controls everything in the browser.
+
+// Why is Window Object Important?
+
+// Because it gives JavaScript access to browser features like:
+// 1.HTML document
+// 2.URL information
+// 3.Browser history
+// 4.Screen size
+// 5.Alerts and timers
+// So it is very important for controlling and interacting with the browser.
+
+// window
+
+// Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+
+// window.alert("hello");
+// window.open();
+// window.Date();
+
+// Object.keys(window);
+// (242) ['window', 'self', 'document', 'name', 'location', 'customElements', 'history', 'navigation', 'locationbar', 'menubar', 'personalbar', 'scrollbars', 'statusbar', 'toolbar', 'status', 'closed', 'frames', 'length', 'top', 'opener', 'parent', 'frameElement', 'navigator', 'origin', 'external', 'screen', 'innerWidth', 'innerHeight', 'scrollX', 'pageXOffset', 'scrollY', 'pageYOffset', 'visualViewport', 'screenX', 'screenY', 'outerWidth', 'outerHeight', 'devicePixelRatio', 'event', 'clientInformation', 'screenLeft', 'screenTop', 'styleMedia', 'onsearch', 'onappinstalled', 'onbeforeinstallprompt', 'onabort', 'onbeforeinput', 'onbeforematch', 'onbeforetoggle', 'onblur', 'oncancel', 'oncanplay', 'oncanplaythrough', 'onchange', 'onclick', 'onclose', 'oncommand', 'oncontentvisibilityautostatechange', 'oncontextlost', 'oncontextmenu', 'oncontextrestored', 'oncuechange', 'ondblclick', 'ondrag', 'ondragend', 'ondragenter', 'ondragleave', 'ondragover', 'ondragstart', 'ondrop', 'ondurationchange', 'onemptied', 'onended', 'onerror', 'onfocus', 'onformdata', 'oninput', 'oninvalid', 'onkeydown', 'onkeypress', 'onkeyup', 'onload', 'onloadeddata', 'onloadedmetadata', 'onloadstart', 'onmousedown', 'onmouseenter', 'onmouseleave', 'onmousemove', 'onmouseout', 'onmouseover', 'onmouseup', 'onmousewheel', 'onpause', 'onplay', 'onplaying', 'onprogress', 'onratechange', 'onreset', …]
+
+
+
+
+// document 
+
+
+// document is an object that represents the web page (HTML page) loaded in the browser.
+
+// It is part of the DOM (Document Object Model).
+
+// 👉 document = whole HTML page
+
+// ✅ Why is document used?
+
+// We use document to:
+
+// 1.Access HTML elements
+
+// 2.Change content
+
+// 3.Change styles
+
+// 4.Add or remove elements
+
+// 5.Handle user actions (click, input, etc.)
+
+// const temp =window.document.getElementById("frist").textContent="i am student of cse";
+
+// window.document.documentElement.children[1].children[1].textContent ="i am from bihar ";
+
+
+
+// temp.innerText; // jo browser par show karega wahi 
+// 'Strike is Comming soon'
+// temp.textContent // ye us tag ke andar ke pure content ko show karega and tag ko ignore karega
+// '\n               Strike is Comming soon 18 october'
+// temp.innerHTML // ye sabko show karega 
+// '\n               Strike is Comming soon <span style="display: none;">18 october</span>'
+
+
+
+// console.log(window.document);
+// VM721:1 #document (http://127.0.0.1:5502/03JAVASCRIPT/Day13/01_index.html)
+// console.log(window.document.documentElement);
+// VM754:1 <html lang=​"en">
+//           ​<head>​…​</head>
+//           ​<body style=​"background-color:​ #ffc0cb;​">​…​</body>
+//        ​</html>​
+// console.log(window.document.documentElement.children);
+// VM782:1 HTMLCollection(2) [head, body]
+
+
+
+
+// how to select element in DOM based id, class, tag name, css selector
+
+// getElementById -> it is return an single DOM object
+// getElementsByClassName -> it is return an HTMLCollection (array like object)
+// getElementsByTagName -> it is return an HTMLCollection (array like object)
+
+
+// select element by id
+
+// const temp = window.document.getElementById("frist");
+// // temp
+// // <h1 style="background-color: orange; color: brown;" id="frist" class="third">…</h1>
+// temp.textContent = "i am rajneesh";
+// // 'i am rajneesh'
+// temp.style.backgroundColor = "yellow";
+// // 'yellow'
+// temp.id = "first_h1";
+// // 'first_h1'
+// console.log(temp.id);
+// // 'first_h1'
+
+
+
+// select element by class name
+
+// const temp=window.document.getElementsByClassName("third");
+// temp
+// // HTMLCollection(3) [h1#frist.third, h2#second.third, ul.third, frist: h1#frist.third, second: h2#second.third]
+
+// // temp[0];
+// // <h1 style="background-color: orange; color: brown;" id="frist" class="third">…</h1>
+// temp[0].style.backgroundColor="blue";
+// // 'blue'
+
+
+// for (let nums of temp) {
+//     console.log(nums);
+// }
+
+
+// const arr=[...temp];
+
+
+
+
+// select element TagName
+
+
+// const temp=window.document.getElementsByTagName("li");
+// console.log(temp)
+// HTMLCollection(3) [li, li,li]
+// for(let num of temp)
+//     console.log(num);
+// VM913:2 <li>​…​</li>​::marker​"Fridge"</li>​
+// VM913:2 <li>​…​</li>​
+// VM913:2 <li>​…​</li>​
+// const arr=[...temp];
+// arr
+// (3) [li, li, li]
+
+
+// edit any attributes 
+// console.log(temp[1].id);
+// temp[1].id="second_h2";
+// console.log(temp[1].id);
+
+
+
+// css selector
+
+
+// const x=document.querySelector("h2");
+// x
+// <h2 id=​"second" class=​"third">​it is comming on Diwali ​</h2>​
+// const x=document.querySelector(".third");
+// undefined
+// x
+// <h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
+// const x=document.querySelector("#frist");
+// undefined
+// x
+// <h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
+
+
+// const x=document.querySelector("h2");
+// undefined
+// x
+// <h2 id=​"second" class=​"third">​it is comming on Diwali ​</h2>​
+// x.textContent=" i am fullStackdeveloper";
+// ' i am fullStackdeveloper'
+// console.log(x.tagName);
+// VM946:1 H2
+// undefined
+// const x=docu
+// VM1000:1 Uncaught ReferenceError: docu is not defined
+//     at <anonymous>:1:9
+// (anonymous) @ VM1000:1
+// const x=document.querySelector("#frist");
+// undefined
+// x
+// <h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
+// document.querySelector(".third");
+// <h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
+// const list=document.querySelector("third");
+// undefined
+// list
+// null
+// const list=document.querySelectorAll(".third");
+// undefined
+// list
+// NodeList(3) [h1#frist.third, h2#second.third, ul.third]
+// list[0];
+// <h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
+
+// list[1];
+// <h2 id=​"second" class=​"third">​it is comming on Diwali ​</h2>​
+// list[2];
+// <ul class=​"third">​…​</ul>​

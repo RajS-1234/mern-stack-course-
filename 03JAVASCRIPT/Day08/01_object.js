@@ -153,9 +153,10 @@ const user ={
 }
 
 
-const user2={...user};
-user2.name="Mohan";
-user.address.city="siwan oikhgv";
-console.log(user2);
+// const user2={...user};
+// user2.name="Mohan";
+// user.address.city="siwan oikhgv";
+// console.log(user2);
 
 // console.log(user);
+console.dir(user);

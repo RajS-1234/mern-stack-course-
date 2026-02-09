@@ -5,60 +5,56 @@
                <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <title>Document</title>
 </head>
-<body>
-        <h1 style="background-color: orange; color: brown;" id="frist">
-               Strike is Comming soon</h1> 
+<body style="background-color: #ffc0cb;">
+        <h1 style="background-color: orange; color: brown;" id="frist" class="third">
+               Strike is Comming soon <span style="display: none;">18 october</span></h1> 
         
-        <h2 id="second">it is comming on Diwali </h2>  
+        <h2 id="second" class="third">it is comming on Diwali </h2> 
+        <h2>hello ji aap kaise hai </h2>
+        
+        
+       <ul class="third">
+          <li>Fridge</li>
+          <li>Cooler</li>
+          <li>Press</li>
+       </ul>
+
         <script src="./02_DOM.js"></script>     
 </body>
 </html>
-
 <!-- 
-
-ham log ke pass kuc command hota hai jisko run karte hi us element ko object bana ke deta hai  
--->
-
-<!-- 
-who convert html element into object 
-
-browser have some feature and provide syntax , we can change html file into object with help of syntan 
-
-browser hamko kuc syntax la ke leta hai uske help se ham usko object me convert kar ke denge -->
-
-<!-- 
-
-const temp=window.document.getElementById("frist");
+const x=document.querySelector("h2");
 undefined
-temp
-<h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist">​ Strike is Comming soon​</h1>​
-console.dir(temp);
-VM399:1 h1#frist
+x
+<h2 id=​"second" class=​"third">​it is comming on Diwali ​</h2>​
+x.textContent=" i am fullStackdeveloper";
+' i am fullStackdeveloper'
+console.log(x.tagName);
+VM946:1 H2
 undefined
-typeof temp;
-'object'
-temp.textContent="i am rajnesh";
-'i am rajnesh'
+const x=docu
+VM1000:1 Uncaught ReferenceError: docu is not defined
+    at <anonymous>:1:9
+(anonymous) @ VM1000:1
+const x=document.querySelector("#frist");
+undefined
+x
+<h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
+document.querySelector(".third");
+<h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
+const list=document.querySelector("third");
+undefined
+list
+null
+const list=document.querySelectorAll(".third");
+undefined
+list
+NodeList(3) [h1#frist.third, h2#second.third, ul.third]
+list[0];
+<h1 style=​"background-color:​ orange;​ color:​ brown;​" id=​"frist" class=​"third">​…​</h1>​
 
-window is object ,browser ek win object create karta hai and javascript file ke sath attach karta hai
-window ke pass very property hota hai 
-window.open();
-window.console.log("hii am rajneesh kumar");
-console.log("hello");
-
-window is global object hai 
-eske andar hai document hai
-
-agar ham javascrpt ka empty file bant hai to bro window onj ko dal denga 
-
-
-kaya hai document ke andar
-document ke andar html ka file hai present hai 
-object ke form me hota hai 
-
-console.dir(document);
-
-
-document.getElementId()
-
+list[1];
+<h2 id=​"second" class=​"third">​it is comming on Diwali ​</h2>​
+list[2];
+<ul class=​"third">​…​</ul>​
 -->

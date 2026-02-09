@@ -41,7 +41,3 @@ console.log(c);
 // }
 // greet();
 
-
-
-
-

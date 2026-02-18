@@ -1,3 +1,4 @@
+// Internal working of React
 
 // // create a h1 element using js
 // const element1 =document.createElement("h1");
@@ -7,6 +8,8 @@
 // element1.style.fontSize="30px";
 // element1.style.backgroundColor="orange";
 // element1.style.color="white";
+
+
 
 
 
@@ -24,6 +27,8 @@
 // const root=document.getElementById("root");
 // root.append(element1);
 // root.append(element2);
+
+
 
 
 
@@ -112,7 +117,6 @@
 
 /*-------------------------------------------------------------------------------------------------------------*/
 
-
 // orinal React 
 
 // const React = {
@@ -153,10 +157,51 @@
 // }
 
 
+
 const element1=React.createElement("h1",{className:"element",id:"first",style:{fontSize:"20px",backgroundColor:"lightblue",color:"black"}},"hello coder army");
 const element2=React.createElement("h2",{className:"element",id:"second",style:{fontSize:"20px",backgroundColor:"pink",color:"green"}},"strike is comming soon");
 console.log(element1);
 console.log(element2);
+
+
+
+//--------------------------------------------------------------------------
+
+
+// const root=document.getElementById("root");
+// ReactDOM.render(element1, root);   
+// ReactDOM.render(element2, root);  
+
+
+
+
+// remove all element form the container after add new Element
+
+// ReactDOM.render(element1,document.getElementById('root'));
+// ReactDOM.render(element2,document.getElementById('root'));
+
+
+
+
+
+// it is also remove the Element and add div container in DOM
+
+// const div = React.createElement('div',null,element1,element2,"i am rajneesh kumar");
+// ReactDOM.render(div,document.getElementById('root'));
+// console.log(div);
+
+
+
+
+const div = React.createElement('div',null,element1,element2,"i am rajneesh kumar"); // How it possible More than three argument
+// Main container to render react elements
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(div);
+
+// console.log(div); 
+
+
+
 
 
 
@@ -168,35 +213,6 @@ console.log(element2);
 // );
 
 
-//--------------------------------------------------------------------------------
-
-const div = React.createElement('div',null,element1,element2,"i am rajneesh kumar");
-
-// Main container to render react elements
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(div);
-
-// console.log(div);
-
-
-//--------------------------------------------------------------------------
-
-
-// const div = React.createElement('div',null,element1,element2,"i am rajneesh kumar");
-// ReactDOM.render(div,document.getElementById('root'));
-// console.log(div);
-
-
-//--------------------------------------------------------------------------
-
-// ReactDOM.render(element1,document.getElementById('root'));
-// ReactDOM.render(element2,getElementById('root'));
-
-
-// const root=document.getElementById("root");
-// ReactDOM.render(element1, root);   
-// ReactDOM.render(element2, root);  
 
 
 
@@ -212,34 +228,4 @@ root.render(div);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// const root=document.getElementById("root");
-// // root.append(element1);
-// // root.append(element2);
-// ReactDOM.render(element1,root);
-// ReactDOM.render(element2,root);
-
-
-
-
-
-
-
-// const raj={
-//    name :"rajneesh",
-//    age:20
-// }
-// console.log(raj['name'])
-// for(const i in raj) {
-//      console.log(raj[i]);
-// }
+// DOM Concept strong karna padhega ---Morning

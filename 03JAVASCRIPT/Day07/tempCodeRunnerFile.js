@@ -1,1 +1,1 @@
-console.log(arr);
+console.log(names.toString());

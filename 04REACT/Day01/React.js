@@ -10,10 +10,6 @@
 // element1.style.color="white";
 
 
-
-
-
-
 // // create h2 element using js
 // const element2 =document.createElement("h2");
 // element2.textContent="strike is comming soon ";
@@ -31,11 +27,9 @@
 
 
 
-
-
 // attributes = {
 //      className: "element",
-//      id:"frist"
+//      id: "frist"
 // }
 
 // element = {
@@ -87,7 +81,6 @@
 // const React= {
 //    createElement : function createElement(tag,attributes,children){
 //             const element=document.createElement(tag);
-//             element.textContent=children;
 //             for(const key in attributes) { 
 //                if(key==='style') {
 //                   Object.assign(element.style,attributes.style);
@@ -96,6 +89,7 @@
 //                    element[key]=attributes[key];  
 //                }   
 //             }
+//             element.textContent=children;
 //             return element;
 //    }
 // }
@@ -110,19 +104,28 @@
 // }
 
 
+// const element1=React.createElement("h1",{className:"element",id:"first",style:{fontSize:"20px",backgroundColor:"lightblue",color:"black"}},"hello coder army");
+// const element2=React.createElement("h2",{className:"element",id:"second",style:{fontSize:"20px",backgroundColor:"pink",color:"green"}},"strike is comming soon");
+// console.log(element1);
+// console.log(element2);
+
+
 // const root=document.getElementById("root");
+
+// old way to render element in DOM 17 version
+
 // ReactDOM.render(element1, root);   
 // ReactDOM.render(element2, root);  
 
 
-/*-------------------------------------------------------------------------------------------------------------*/
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // orinal React 
 
 // const React = {
-//         createElement : function(type,props,children) {
+//         createElement : function(type,props,...children) {
               
-//                return{
+//                return{    // Returns a plain JavaScript object (Virtual DOM)
 //                    type: type,
 //                    props : {
 //                       ...props,
@@ -132,14 +135,17 @@
 //         }
 // }
 
+
+
 // const ReactDOM = {
 //     render: function(reactElement,root){
        
 //        root.innerHTML = '';
 
+//         // Convert Virtual DOM to Real DOM
 //        const element =  document.createElement(reactElement.type);
         
-//       const {props} = reactElement;
+//        const {props} = reactElement;
 
 //       for(const key in props){
 //         if(key==='style'){
@@ -156,17 +162,14 @@
 //     }
 // }
 
-
-
-const element1=React.createElement("h1",{className:"element",id:"first",style:{fontSize:"20px",backgroundColor:"lightblue",color:"black"}},"hello coder army");
-const element2=React.createElement("h2",{className:"element",id:"second",style:{fontSize:"20px",backgroundColor:"pink",color:"green"}},"strike is comming soon");
-console.log(element1);
-console.log(element2);
-
-
+// const element1=React.createElement("h1",{className:"element",id:"first",style:{fontSize:"20px",backgroundColor:"lightblue",color:"black"}},"hello coder army");
+// const element2=React.createElement("h2",{className:"element",id:"second",style:{fontSize:"20px",backgroundColor:"pink",color:"green"}},"strike is comming soon");
+// console.log(element1);
+// console.log(element2);
 
 //--------------------------------------------------------------------------
 
+// step 1.
 
 // const root=document.getElementById("root");
 // ReactDOM.render(element1, root);   
@@ -174,6 +177,7 @@ console.log(element2);
 
 
 
+// step 2
 
 // remove all element form the container after add new Element
 
@@ -182,28 +186,27 @@ console.log(element2);
 
 
 
-
+// step 3 
 
 // it is also remove the Element and add div container in DOM
 
+// // how to insert more than element into DOM
 // const div = React.createElement('div',null,element1,element2,"i am rajneesh kumar");
 // ReactDOM.render(div,document.getElementById('root'));
 // console.log(div);
 
 
 
+// step 4
 
-const div = React.createElement('div',null,element1,element2,"i am rajneesh kumar"); // How it possible More than three argument
-// Main container to render react elements
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(div);
+// // how it working 
+// const div = React.createElement('div',null,element1,element2,"i am rajneesh kumar"); // How it possible More than three argument
 
-// console.log(div); 
+// // Main container to render react elements
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(div);
 
-
-
-
-
+// // console.log(div); 
 
 // problem with react
 
@@ -211,21 +214,6 @@ root.render(div);
 //     React.createElement("h1",{className:"element",id:"first",style:{fontSize:"30px",backgroundColor:"orange",color:"white"}},"Hello Coder Army"),
 //     React.createElement('h2',{className:"element",id:"second",style:{fontSize:"20px",backgroundColor:"pink",color:"green"}},"Strike is launched"),
 // );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // DOM Concept strong karna padhega ---Morning

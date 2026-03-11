@@ -43,7 +43,6 @@
 
 
 // function for reusable
-
 // function createElement(tag,attributes,children){
 //             const element=document.createElement(tag);
 //             element.textContent=children;    
@@ -216,4 +215,17 @@
 // );
 
 
-// DOM Concept strong karna padhega ---Morning
+
+
+
+
+
+
+
+
+
+
+
+
+
+// DOM Concept strong karna padhega --- then it is understand react 
